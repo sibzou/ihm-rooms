@@ -117,6 +117,8 @@ confirmAddRoomButton.addEventListener("click", () => {
 });
 
 removeRoomButton.addEventListener("click", () => {
+    if(!window.confirm("Êtes-vous sûr de supprimer cette salle ?")) return;
+
     selectedRoom.remove();
     deselectRoom();
 

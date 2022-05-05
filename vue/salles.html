@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>tp noté</title>
+        <link rel="stylesheet" href="css/salles.css"/>
+    </head>
+    <body>
+        <div id="rooms-manager">
+            <h1>Gestion des salles</h1>
+            <p>Nombre de salles répertoriées : <span id="rooms-count"/></p>
+            <div id="rooms-list">
+
+            </div>
+            <div>
+                <button id="add-room-button">Ajouter</button>
+                <button id="remove-room-button">Retirer</button>
+            </div>
+            <div id="add-room-form">
+                <div>
+                    <label>Numéro de la salle</label>
+                    <input type="text" id="room-number"/>
+                </div>
+                <div>
+                    <label>Vidéoprojecteur</label>
+                    <input type="checkbox" id="videoprojector"/>
+                </div>
+                <div>
+                    <label>Salle informatique</label>
+                    <input type="checkbox" id="computer-room"/>
+                </div>
+                <div>
+                    <label>Nombre d'ordinateurs</label>
+                    <input type="number" min="1" id="computer-number"/>
+                </div>
+                <div>
+                    <label>Bâtiment</label>
+                    <select id="building-letter">
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                        <option value="e">E</option>
+                        <option value="f">F</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Étage</label>
+                    <fieldset>
+                        <div>
+                            <input type="radio" name="floor" id="ground"/>
+                            <label>Rez de chaussée</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="floor" id="floor-1"/>
+                            <label>Étage 1</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="floor" id="floor-2"/>
+                            <label>Étage 2</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="floor" id="floor-3"/>
+                            <label>Étage 3</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <button id="confirm-add-room-button">Valider</button>
+                    <button id="cancel-add-room-button">Annuler</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../controleur/salles.js"></script>
+</html>

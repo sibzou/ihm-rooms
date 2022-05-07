@@ -15,3 +15,28 @@ body {
     flex: 1;
     overflow-y: auto;
 }
+
+#add-room-form {
+    margin-top: 1rem;
+}
+
+.buttons-bar {
+    display: flex;
+    justify-content: end;
+}
+
+button {
+    background-color: #4B4BFF;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    background-color: #3939C6;
+}
+
+button[disabled] {
+    background-color: #CACACA;
+}
